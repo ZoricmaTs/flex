@@ -1,12 +1,19 @@
 body {
-    margin: 0;
+   
     padding: 0;
     background-color: rgb(61, 66, 77);
 }
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 .clearer {
     display: flex;
     justify-content: space-between;
-    align-items: center; /*вертикальное выравнивание*/
+    align-items: center; /*Ð²ÐµÑ€Ñ‚Ð¸ÐºÐ°Ð»ÑŒÐ½Ð¾Ðµ Ð²Ñ‹Ñ€Ð°Ð²Ð½Ð¸Ð²Ð°Ð½Ð¸Ðµ*/
     margin: 0;
     padding: 10px;
     background-color: #F1F1F1;
@@ -121,19 +128,251 @@ body {
     }
   }
 
-article {
+  .logo {
+    /* background-color: white; */
+    /* min-width: 800px; */
+    /* padding: 10px; */
     display: flex;
     flex-direction: row;
-    background-color: rgba(0, 105, 10);
+    justify-content: flex-start;
+    background-color: white;
+  }
+  
+  
+  .logo_picture-elastic {
+    background-image: url("pat.png");
+    background-repeat:repeat-x;
+    width: 40%;
+  }
+  
+  .logo_picture-logocity {
+    background-image: url("pat.png");
+    background-repeat:repeat-x;
+   
+  }
+  
+  img .logo_picture-logocity {
+  z-index: 2;
+  } 
+  
+  .container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    background-color: white;
+  }
 
-}
+/*responsive main */
+@media screen and (max-width: 800px) {
+  .logo .mobile {
+      display: inline-block;
+  }
+  .main-menu .desktop {
+      display: none;
+  }
+      img .logo_picture-desktop  {
+        z-index: 2;
+        }
+      
+  }
 
-aside {
-    flex-grow: 1;
-    background-color: rgba(254, 254, 34);
 
-}
+  .categories_list {
+    margin: 15px 0;
+    font-weight: bold;
+  }
+  
+  .categories_list-main {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .categories_list-main a {
+    font-weight: bold;
+    color: #5c5b60;
+  }
+  
+  ul .categories_list-main {
+  }
+  
+  .categories_list-main li {
+    display: inline-block;
+  }
+  
+  .categories-btn {
+    margin: 20px 0;
+    height: 20px;
+  }
+  
+  .categories-btn span {
+    width: 130px;
+  }
+  
+  .block {
+    display: flex;
+    flex-direction: column;
+    min-width: 900px;
+    width: 65%;
+  }
+  
+  .block_post {
+    display: flex;
+    flex-direction: column;
+    /* padding: 10px; */
+  }
+  
+  .block_post__text {
+    display: flex;
+    flex-direction: column;
+  }
+  .block_post__text-header {
+    text-decoration: none;
+  }
+  
+  .block_post__text-header h2 {
+    color: #5195CA;
+    font-size: 30px;
+    font-weight: normal;
+    line-height: 1;
+    margin: 15px 0 5px 0;
+    cursor: pointer;
+  }
+  
+  .block_post__text-header h2:hover {
+    color: red;
+  }
+  
+  .block_post__info-user,
+  .block_post__info-comment,
+  .block_post__info-categories {
+    color: #5c5b60;
+  }
+  
+  .block_post__info-user {
+    margin: 5px;
+  }
+  
+  .pages .pagespaginator {
+    background-color: #798397;
+    padding: 10px;
+  }
+  
+  .pages .pagespaginator a,
+  .pages .pagespaginator span {
+    display: inline-block;
+    min-width: 20px;
+    height: 20px;
+    padding: 0 10px;
+    text-align: center;
+    line-height: 20px;
+    vertical-align: middle;
+    font-weight: bold;
+    text-decoration: none;
+  }
+  
+  .pages .pagespaginator a {
+    border-right: 1px solid black;
+  }
+  
+  .pagespaginator .current {
+    color: black;
+  }
+  
+  .pages .pagespaginator a:hover {
+    opacity: 0.3;
+  }
+  
+  aside .sidebar {
+    min-width: 400px;
+    display: flex;
+    flex-direction: row;
+  }
+  
+  .widget {
+   
+  }
+  
+  .widget_townspeople {
+    margin: 10px 0;
+  }
+  
+  .widget_townspeople__new {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+  
+  .widget_townspeople__new-users  {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+  }
+  
+  .widget_townspeople__new-btn {
+    margin: 30px 0;
+  }
+  
+  .widget_townspeople__new-btn, 
+  .widget_townspeople-btn,
+  .widget_townspeople-birth {
+    width: 200px;
+  }
+  
+  .widget_townspeople__new-us {
+    display: flex;
+    flex-direction: column;
+    padding: 5px 10px;
+  }
+  
+  .widget_townspeople__new-user .btn-blue {
+    margin: 30px 0;
+  }
+  
+  .entertainment_wrapper h1 a {
+    color: black;
+    font-size: 30px;
+  }
+  
+  .entertainment_wrapper__nav a {
+    color: #5c5b60;
+  }
+  
+  .entertainment_wrapper__nav li {
+    display: inline-block;
+    list-style: none;
+  }
+  
+  .block_ent {
+    display: flex;
+    flex-direction: row;
+  }
+  
+  .entertainment_new {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+  }
+  
+  .entertainment_new-name h1 {
+    font-size: 20px;
+  }
+  
+  .entertainment_new__data {
+    display: flex;
+    flex-direction: row;
+    padding: 5px;
+  }
+  
+  .entertainment_new__data__contact {
+    margin-left: 10px;
+  }
+  
+  footer {
+    background-color: white;
+    margin-top: 0;
+  }
+  
+  .logo-footer {
+    margin: 20px 30px;
+  }
 
-footer {
-    background-color: rgba(255, 33, 255);
-}
