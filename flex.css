@@ -1,5 +1,5 @@
 body {
-   
+  max-width: 1200px; /*responsive*/
     padding: 0;
     background-color: rgb(61, 66, 77);
 }
@@ -9,6 +9,33 @@ body {
   padding: 0;
   box-sizing: border-box;
 }
+
+header {
+  width: 100%;  /*responsive*/
+}
+
+article .container {
+  width: 100%;  /*responsive*/
+}
+
+.blockcont {
+  width: 80%;
+}
+
+.sidebar {
+  width: 26%;
+}
+
+footer {
+   width: 100%;  /*responsive*/
+}
+
+.block_post__text-img {
+      width: 100%;
+    height: auto;
+  } 
+
+
 
 .clearer {
     display: flex;
@@ -176,6 +203,11 @@ body {
       
   }
 
+  .categories {
+    display: flex;
+    flex-direction: row;
+    
+  }
 
   .categories_list {
     margin: 15px 0;
@@ -207,18 +239,20 @@ body {
   .categories-btn span {
     width: 130px;
   }
-  
+
+  .blockcont {
+    border: 1px solid red;
+  }
+
   .block {
     display: flex;
     flex-direction: column;
-    min-width: 900px;
-    width: 65%;
+
   }
   
   .block_post {
     display: flex;
     flex-direction: column;
-    /* padding: 10px; */
   }
   
   .block_post__text {
@@ -283,7 +317,7 @@ body {
   }
   
   aside .sidebar {
-    min-width: 400px;
+    /*width: 200px;*/
     display: flex;
     flex-direction: row;
   }
@@ -315,7 +349,7 @@ body {
   .widget_townspeople__new-btn, 
   .widget_townspeople-btn,
   .widget_townspeople-birth {
-    width: 200px;
+    width: auto;
   }
   
   .widget_townspeople__new-us {
@@ -324,6 +358,11 @@ body {
     padding: 5px 10px;
   }
   
+  img .widget_townspeople__new-img {
+    width: 50%;
+    height: auto;
+  }
+
   .widget_townspeople__new-user .btn-blue {
     margin: 30px 0;
   }
@@ -376,3 +415,25 @@ body {
     margin: 20px 30px;
   }
 
+  /* 1000px */
+@media only screen and (max-width: 1000px) {
+  
+  .widget_townspeople__new-users {
+    display: flex;
+    flex-direction: column;
+    background-color: #ffb549
+  }
+ 
+}
+
+/* 600px */
+@media only screen and (max-width: 600px) {
+  .block_ent {
+    display: flex;
+    flex-direction: column;
+  }
+  .entertainment_new {
+      background-color: #ff58fd;
+      width: 100%;
+  }
+}
