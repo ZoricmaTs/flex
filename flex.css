@@ -25,6 +25,8 @@ article .container {
 .sidebar {
   width: 20%;
   padding-left: 20px;
+  display: flex;
+  flex-direction: column;
 }
 
 footer {
@@ -63,13 +65,15 @@ footer {
   }
 
   .btn {
-cursor: pointer;
-border: 1px solid #d9d9d9;
-padding: 5px;
-text-decoration: none;
-color: #444;
-/* overflow: hidden; */
-}
+    padding: 5px;
+
+    color: #444;
+    text-decoration: none;
+    cursor: pointer;
+    border: 1px solid #d9d9d9;
+  }
+
+  
   
   .clearer_login__reg-btn {
   width: 100px;
@@ -88,7 +92,7 @@ footer {
   } 
 
   .clearer_login__reg-btn::before:hover {
-      background-color: yellow;
+    background-image: url("panel_buttons_color.png");
   }
 
   .clearer_login__log-btn {
@@ -283,55 +287,7 @@ footer {
     opacity: 0.3;
   }
   
-  aside .sidebar {
-    display: flex;
-    flex-direction: row;
-  }
-  
-  .widget {
-   
-  }
-  
-  .widget_townspeople {
-    margin: 10px 0;
-  }
-  
-  .widget_townspeople__new {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-  }
-  
-  .widget_townspeople__new-users  {
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-  }
-  
-  .widget_townspeople__new-btn {
-    margin: 30px 0;
-  }
-  
-  .widget_townspeople__new-btn, 
-  .widget_townspeople-btn,
-  .widget_townspeople-birth {
-    width: auto;
-  }
-  
-  .widget_townspeople__new-us {
-    display: flex;
-    flex-direction: column;
-    padding: 5px 10px;
-  }
-  
-  img .widget_townspeople__new-img {
-    width: 50%;
-    height: auto;
-  }
-
-  .widget_townspeople__new-user .btn-blue {
-    margin: 30px 0;
-  }
+ 
   
   .entertainment_wrapper h1 a {
     color: black;

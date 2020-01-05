@@ -5,6 +5,9 @@
             <meta name="viewport" content="width=device-width, initial-scale=1"> <!-- оптимизаия под мобильную версию-->
             <meta name="viewport" content="initial-scale=1, maximum-scale=1">
             <link rel="stylesheet" type="text/css" href="flex.css">
+            <link rel="stylesheet" type="text/css" href="widgets/widgets.css">
+            <link rel="stylesheet" type="text/css" href="widgets/townspeople/townspeople.css">
+            <link rel="stylesheet" type="text/css" href="widgets/townspeople-new/townspeople-new.css">
             <title>flex</title>
 		</head>	
 		<body>
@@ -260,31 +263,31 @@
                     </section>
                 </section>
                 <aside class="sidebar">
-                    <section class="widget">
-                        <div class="widget_townspeople">
-                            <a class="btn widget_townspeople-btn" href="#">Горожане</a>
-                        </div>
-                        <div class="widget_townspeople__new">
-                            <a class="btn widget_townspeople__new-btn" href="#">Недавно прибыли</a>
-                            <div class="widget_townspeople__new-user">
-                                <div class="widget_townspeople__new-users block_users">
-                                    <div class="widget_townspeople__new-us user">
-                                        <img class="widget_townspeople__new-img" src="120499.jpeg" alt="user">
-                                        <a href="#">kukura</a>
-                                    </div>
-                                    <div class="widget_townspeople__new-us user">
-                                        <img class="widget_townspeople__new-img" src="120350.jpg" alt="user">
-                                        <a href="#">Omen</a></div>
-                                    <div class="widget_townspeople__new-us user">
-                                        <img class="widget_townspeople__new-img" src="119661.jpg" alt="user">
-                                        <a href="#">Партизан</a>
-                                    </div>
-                                </div>
-                                <button class="btn-blue">Познакомиться</button>
+                    <div class="townspeople sidebar-townspeople">
+                        <a class="widget__title townspeople__title" href="#">Горожане</a>
+                    </div>
+                    <div class="townspeople-new sidebar-townspeople-new">
+                        <a class="widget__title townspeople-new__title sidebar-townspeople-new__title" href="#">Недавно прибыли</a>                      
+                        <div class="townspeople-new-users-list">
+                            <div class="townspeople-new-user">
+                                <img class="townspeople-new-user__image" src="120499.jpeg" alt="user">
+                                <a href="#" class="townspeople-new-user__title">kukura</a>
                             </div>
-                            <a class="btn widget_townspeople-birth" href="#">Именинники</a>
+                            <div class="townspeople-new-user">
+                                <img class="townspeople-new-user__image" src="120350.jpg" alt="user">
+                                <a href="#" class="townspeople-new-user__title">Omen</a></div>
+                            <div class="townspeople-new-user">
+                                <img class="townspeople-new-user__image" src="119661.jpg" alt="user">
+                                <a href="#" class="townspeople-new-user__title">Партизан</a>
+                            </div>
                         </div>
-                    </section>
+                        <button class="btn townspeople-new__button sidebar-townspeople-new__button townspeople-new__button_color_blue ">Познакомиться</button>
+                        
+                    </div>
+                    <div class="townspeople-birth">
+                        <a class="widget__title townspeople-birth__title" href="#">Именинники</a>     
+                    </div>
+
                 </aside>
             </article>
             <footer>
