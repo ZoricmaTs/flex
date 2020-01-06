@@ -1,0 +1,47 @@
+.post {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .section-post {
+    margin-top: 3em;
+  }
+
+  .post__title { 
+    margin: 15px 0 5px 0;
+    text-decoration: none;
+  }
+  .post__title__header {
+    font-family: Tahoma;
+    font-size: 30px;
+    font-weight: normal;
+    line-height: 1;
+    cursor: pointer;
+  }
+  
+  .post__title-color_blue {
+    color: #5195CA;
+  }
+  
+  .post__title-hover:hover {
+    color: red;
+  }
+  
+  .post__text {
+    margin-top: 1em;   
+  }
+  
+  .section-post__image {
+    width: 100%;
+    height: auto;
+} 
+
+  .post-info__user,
+  .post-info__comment,
+  .post-info__categories {
+    color: #5c5b60;
+  }
+  
+  .section-post-info__user {
+    margin: 5px;
+  }

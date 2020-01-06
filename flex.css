@@ -33,10 +33,7 @@ footer {
    width: 100%;  /*responsive*/
 }
 
-.block_post__text-img {
-      width: 100%;
-    height: auto;
-  } 
+
 
 
 
@@ -123,23 +120,13 @@ footer {
   cursor: pointer;
   font-size: 15px;
   line-height: 15px;
-  /* text-decoration-color:rgb(0, 0, 0); */
-  /* text-decoration-style: solid; */
-  /* text-shadow:rgb(255, 255, 255) 1px 1px 1px; */
-  /* padding: 10px 30px; */
-  /* margin: 5px 0 0 0; */
-  /* margin: 0 0 0 2px; */
   padding: 9px 30px 9px;
   font-family: Tahoma;
-  /* height: 17px; */
   width: 145px;
   
   }
 
   .logo {
-    /* background-color: white; */
-    /* min-width: 800px; */
-    /* padding: 10px; */
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
@@ -174,8 +161,6 @@ footer {
     display: flex;
     flex-direction: row;
     align-items: center;
-    /* margin: 15px; */
-    /* justify-content: space-around; */
   }
 
   .categories_list {
@@ -202,8 +187,6 @@ footer {
   }
   
   .categories-btn {
-    /* height: 20px; */
-    /* width: 130px; */
     margin: 0 20px;
   }
   
@@ -221,41 +204,7 @@ footer {
 
   }
   
-  .block_post {
-    display: flex;
-    flex-direction: column;
-  }
   
-  .block_post__text {
-    display: flex;
-    flex-direction: column;
-  }
-  .block_post__text-header {
-    text-decoration: none;
-  }
-  
-  .block_post__text-header h2 {
-    color: #5195CA;
-    font-size: 30px;
-    font-weight: normal;
-    line-height: 1;
-    margin: 15px 0 5px 0;
-    cursor: pointer;
-  }
-  
-  .block_post__text-header h2:hover {
-    color: red;
-  }
-  
-  .block_post__info-user,
-  .block_post__info-comment,
-  .block_post__info-categories {
-    color: #5c5b60;
-  }
-  
-  .block_post__info-user {
-    margin: 5px;
-  }
   
   .pages .pagespaginator {
     background-color: #798397;
@@ -339,16 +288,12 @@ footer {
 
   /* 950px */
 @media only screen and (max-width: 950px) {
- /*  .container {
-    display: flex;
-    flex-direction: column;
-  }*/
-  .widget_townspeople__new-users { /* Ð½Ð¾Ð²Ñ‹Ðµ Ð³Ð¾Ñ€Ð¾Ð¶Ð°Ð½Ðµ*/
+  .widget_townspeople__new-users { 
     display: flex;
     flex-direction: column;
     background-color: #ffb549
   }
-   .block_ent { /* Ð½Ð¾Ð²Ñ‹Ðµ Ñ€Ð°Ð·Ð²Ð»ÐµÑ‡ÐµÐ½Ð¸Ñ Ð² Ð³Ð¾Ñ€Ð¾Ð´Ðµ*/
+   .block_ent { 
     display: flex;
     flex-direction: column;
   }
@@ -362,12 +307,12 @@ footer {
     flex-direction: column;
   }
 
-  .block_ent { { /* Ð½Ð¾Ð²Ñ‹Ðµ Ñ€Ð°Ð·Ð²Ð»ÐµÑ‡ÐµÐ½Ð¸Ñ Ð² Ð³Ð¾Ñ€Ð¾Ð´Ðµ*/
+  .block_ent { { 
     display: flex;
     flex-direction: column;
   }
   
-  .widget_townspeople__new-users { /* Ð½Ð¾Ð²Ñ‹Ðµ Ð³Ð¾Ñ€Ð¾Ð¶Ð°Ð½Ðµ*/
+  .widget_townspeople__new-users { 
     display: flex;
     flex-direction: column;
     background-color: #ffb549;
