@@ -11,7 +11,9 @@
     margin: 15px 0 5px 0;
     text-decoration: none;
   }
-  .post__title__header {
+
+
+  .post__title-header {
     font-family: Tahoma;
     font-size: 30px;
     font-weight: normal;
@@ -19,11 +21,11 @@
     cursor: pointer;
   }
   
-  .post__title-color_blue {
+  .post__title-header_color_blue {
     color: #5195CA;
   }
   
-  .post__title-hover:hover {
+  .post__title-header_hover:hover {
     color: red;
   }
   
