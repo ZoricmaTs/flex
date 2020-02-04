@@ -1,3 +1,3 @@
 ## Статический сайт
 ***
-[Главная страница] (https://zoricmats.github.io/flex/)
+[Главная страница](https://zoricmats.github.io/flex/)
